@@ -2,9 +2,9 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class Player_Controller : MonoBehaviour
+public class Player_move : MonoBehaviour
 {
-    public float speed;
+   public float speed;
     public float rotspeed;
     public float hInput;
     public float vInput;
@@ -18,5 +18,6 @@ public class Player_Controller : MonoBehaviour
 
         transform.Rotate(Vector3.up, hInput * rotspeed * Time.deltaTime); //Move vehicle left and right
         transform.Translate(Vector3.forward * vInput * speed * Time.deltaTime); //Move vehicle forward and back
+
     }
 }
