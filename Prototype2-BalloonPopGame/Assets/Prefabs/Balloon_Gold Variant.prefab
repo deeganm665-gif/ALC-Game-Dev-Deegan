@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &447991280096145772
+--- !u!1001 &2710097009461003032
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,18 +11,18 @@ PrefabInstance:
     - target: {fileID: 3002110066017407327, guid: 94fab25bb419e0e44bc45acfb38a777c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: af247e824af00ac4085d545f938366c1, type: 2}
+      objectReference: {fileID: 2100000, guid: f6cfaa36eb2d85d429c67335e0971e88, type: 2}
     - target: {fileID: 4624210028234769296, guid: 94fab25bb419e0e44bc45acfb38a777c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6787257
+      value: 0.024273396
       objectReference: {fileID: 0}
     - target: {fileID: 4624210028234769296, guid: 94fab25bb419e0e44bc45acfb38a777c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.5679998
+      value: 1.1311963
       objectReference: {fileID: 0}
     - target: {fileID: 4624210028234769296, guid: 94fab25bb419e0e44bc45acfb38a777c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.73173034
+      value: 1.189
       objectReference: {fileID: 0}
     - target: {fileID: 4624210028234769296, guid: 94fab25bb419e0e44bc45acfb38a777c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -55,38 +55,17 @@ PrefabInstance:
     - target: {fileID: 5391623177964231869, guid: 94fab25bb419e0e44bc45acfb38a777c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: af247e824af00ac4085d545f938366c1, type: 2}
+      objectReference: {fileID: 2100000, guid: f6cfaa36eb2d85d429c67335e0971e88, type: 2}
     - target: {fileID: 8878451862177145847, guid: 94fab25bb419e0e44bc45acfb38a777c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: c1e7a54c100cab04b9e3fbea05b18cd2, type: 2}
     - target: {fileID: 8993200841186777075, guid: 94fab25bb419e0e44bc45acfb38a777c, type: 3}
       propertyPath: m_Name
-      value: Balloon_Blue Variant
+      value: Balloon_Gold Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8993200841186777075, guid: 94fab25bb419e0e44bc45acfb38a777c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7883015577306008554}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94fab25bb419e0e44bc45acfb38a777c, type: 3}
---- !u!1 &8861343772830918303 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8993200841186777075, guid: 94fab25bb419e0e44bc45acfb38a777c, type: 3}
-  m_PrefabInstance: {fileID: 447991280096145772}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7883015577306008554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8861343772830918303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d6496c6d417d70458aa18ab62847911, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
