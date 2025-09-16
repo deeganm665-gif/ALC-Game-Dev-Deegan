@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d6496c6d417d70458aa18ab62847911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 2
 --- !u!114 &6013202600032645541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,4 +108,4 @@ MonoBehaviour:
   clickToPop: 3
   scaleToIncrease: 0.1
   scoreToGive: 1
-  popEffect: {fileID: 0}
+  popEffect: {fileID: 1379332711325473491, guid: 070e7f40dd60a6849ac3ffb95fe2eef0, type: 3}
