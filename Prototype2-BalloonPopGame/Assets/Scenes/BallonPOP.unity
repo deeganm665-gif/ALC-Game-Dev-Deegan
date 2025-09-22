@@ -714,10 +714,11 @@ MonoBehaviour:
   - {fileID: 7696807480552416748, guid: 38211a60e67fb20479b2bf9f3e6a1896, type: 3}
   - {fileID: 7281497978383730058, guid: b564d1078dbf39b4ab6f1346a5cda951, type: 3}
   - {fileID: 1840765351414960959, guid: df50d2f9423673d47b7ef04dac034d3c, type: 3}
+  - {fileID: 8792407535298397715, guid: 7b4bdeda1e3f02f40a75a132bd336e13, type: 3}
   startDelay: 0.5
   spawnInterval: 1.5
   xRange: 10
-  yRange: 9
+  yPos: 10
 --- !u!4 &1399110497
 Transform:
   m_ObjectHideFlags: 0

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2546396684192502520
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 879769753312432711, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f80f5a3c72e71c44ba3aa649ab9c7520, type: 2}
+    - target: {fileID: 2920541877466994360, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
+      propertyPath: clickToPop
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920541877466994360, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
+      propertyPath: scoreToGive
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436336952012379371, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
+      propertyPath: m_Name
+      value: Balloon_Dimound Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327440544512999560, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.202635
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327440544512999560, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -14.07886
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327440544512999560, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -45.333054
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327440544512999560, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327440544512999560, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327440544512999560, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327440544512999560, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327440544512999560, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327440544512999560, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327440544512999560, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534930015210538186, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8020583736319385509, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f80f5a3c72e71c44ba3aa649ab9c7520, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
