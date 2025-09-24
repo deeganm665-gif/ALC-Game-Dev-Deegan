@@ -13,8 +13,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: f80f5a3c72e71c44ba3aa649ab9c7520, type: 2}
     - target: {fileID: 2920541877466994360, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
+      propertyPath: popEffect
+      value: 
+      objectReference: {fileID: 6698934554028341862, guid: 5771a752edad29f4999263390f8c02ce, type: 3}
+    - target: {fileID: 2920541877466994360, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
       propertyPath: clickToPop
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2920541877466994360, guid: 5e77370ae7e877a419ac85e9a942a5d9, type: 3}
       propertyPath: scoreToGive
