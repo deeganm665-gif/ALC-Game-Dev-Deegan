@@ -154,10 +154,12 @@ MonoBehaviour:
   movespeed: 5
   jumpForce: 5
   isGrounded: 0
+  isWalled: 0
   bottomBound: -4
   score: 0
   rb: {fileID: 228320807}
   scoreText: {fileID: 0}
+  wall: {fileID: 0}
 --- !u!50 &228320807
 Rigidbody2D:
   serializedVersion: 5
@@ -447,8 +449,8 @@ GameObject:
   - component: {fileID: 679915302}
   - component: {fileID: 679915301}
   m_Layer: 0
-  m_Name: Platform (1)
-  m_TagString: Untagged
+  m_Name: Wall
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
