@@ -12,6 +12,11 @@ public class Player_Controller : MonoBehaviour
     public bool isGrounded;
     public bool isWalled;
     public int bottomBound = -4;
+    private SpriteRenderer sr;
+    private Vector2 startPos;
+    private Vector2 targetPos;
+    private bool jumping;
+    private float t;
 
     [Header("Score")]
     public int score;
@@ -20,6 +25,11 @@ public class Player_Controller : MonoBehaviour
     public TextMeshProUGUI scoreText;
 
     public GameObject wall;
+
+    void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
 
     public void AddScore(int amount)
     {
@@ -31,6 +41,14 @@ public class Player_Controller : MonoBehaviour
     {
         float movInput = Input.GetAxisRaw("Horizontal");
         rb.linearVelocity = new Vector2(movInput * movespeed, rb.linearVelocity.y);
+        if (movInput < 0)
+        {
+            sr.flipX = true;
+        }
+        else
+        {
+            sr.flipX = false;
+        }
     }
 
     void Update()
@@ -47,16 +65,30 @@ public class Player_Controller : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && !isGrounded && isWalled == true)
         {
-            Debug.Log("You should be Wall jumping!");
-            // Calculate direction away from the reference object
-            Vector2 direction = (Vector2)transform.position - (Vector2)wall.transform.position;
+            startPos = transform.position;
+            if (sr.flipX == true)
+            {
+                targetPos = new Vector2(transform.position.x + 1, transform.position.y + 3);
+            }
+            else
+            {
+                targetPos = new Vector2(transform.position.x - 1, transform.position.y + 3);
+            }
+            jumping = true;
 
-            // Normalize the direction to get a unit vector
-            direction.Normalize();
+        }
+        if (jumping)
+        {
+            if (t < 1)
+            {
+                t += .5f * Time.deltaTime;
+            }
+            else
+            {
+                jumping = false;
+            }
 
-            isWalled = false;
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            rb.AddForce(direction * jumpForce, ForceMode2D.Impulse);
+            transform.position = new Vector2(Mathf.Lerp(startPos, targetPos, t));
         }
     }
 
