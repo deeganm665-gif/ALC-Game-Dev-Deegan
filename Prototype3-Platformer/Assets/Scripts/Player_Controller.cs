@@ -11,12 +11,9 @@ public class Player_Controller : MonoBehaviour
     public float jumpForce;
     public bool isGrounded;
     public bool isWalled;
+    private float wallJumpTime = 1;
     public int bottomBound = -4;
     private SpriteRenderer sr;
-    private Vector2 startPos;
-    private Vector2 targetPos;
-    private bool jumping;
-    private float t;
 
     [Header("Score")]
     public int score;
@@ -34,7 +31,7 @@ public class Player_Controller : MonoBehaviour
     public void AddScore(int amount)
     {
         score += amount;
-        scoreText.text = "Score: " + score;
+        scoreText.text = "Spores: " + score;
     }
 
     void FixedUpdate()
@@ -63,33 +60,21 @@ public class Player_Controller : MonoBehaviour
             GameOver();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && !isGrounded && isWalled == true)
+        if(Input.GetKeyDown(KeyCode.Space) && !isGrounded && isWalled)
         {
-            startPos = transform.position;
-            if (sr.flipX == true)
-            {
-                targetPos = new Vector2(transform.position.x + 1, transform.position.y + 3);
-            }
-            else
-            {
-                targetPos = new Vector2(transform.position.x - 1, transform.position.y + 3);
-            }
-            jumping = true;
+            isWalled = false;
+            wallJumpTime = wallJumpTime;
 
-        }
-        if (jumping)
-        {
-            if (t < 1)
-            {
-                t += .5f * Time.deltaTime;
-            }
-            else
-            {
-                jumping = false;
-            }
+            rb.AddForce(Vector2.up * (jumpForce + 5), ForceMode2D.Impulse);
+            wallJumpTime -= 1;
 
-            transform.position = new Vector2(Mathf.Lerp(startPos, targetPos, t));
+            if (wallJumpTime <= 0)
+            {
+                isWalled = true;
+            }
         }
+
+        
     }
 
     void OnCollisionEnter2D(Collision2D collision)
