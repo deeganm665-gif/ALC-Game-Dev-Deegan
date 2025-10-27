@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public Vector3 moveOffset;
     private Vector3 startPos;
     private Vector3 targetPos;
+    private SpriteRenderer sr;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -16,6 +17,7 @@ public class Enemy : MonoBehaviour
     {
         startPos = transform.position;
         targetPos = startPos;
+        sr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -28,10 +30,12 @@ public class Enemy : MonoBehaviour
             if (targetPos == startPos)
             {
                 targetPos = startPos + moveOffset;
+                sr.flipX = true;
             }
             else
             {
                 targetPos = startPos;
+                sr.flipX = false;
             }
 
         }

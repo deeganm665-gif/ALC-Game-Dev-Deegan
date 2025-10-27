@@ -42,7 +42,7 @@ public class Player_Controller : MonoBehaviour
         {
             sr.flipX = true;
         }
-        else
+        else if (movInput > 0)
         {
             sr.flipX = false;
         }
@@ -65,13 +65,8 @@ public class Player_Controller : MonoBehaviour
             isWalled = false;
             wallJumpTime = wallJumpTime;
 
-            rb.AddForce(Vector2.up * (jumpForce + 5), ForceMode2D.Impulse);
-            wallJumpTime -= 1;
+            rb.AddForce(Vector2.up * (jumpForce + 1), ForceMode2D.Impulse);
 
-            if (wallJumpTime <= 0)
-            {
-                isWalled = true;
-            }
         }
 
         
