@@ -46,6 +46,7 @@ public class Player_Controller : MonoBehaviour
         {
             sr.flipX = false;
         }
+        Debug.Log(rb.linearVelocity);
     }
 
     void Update()
